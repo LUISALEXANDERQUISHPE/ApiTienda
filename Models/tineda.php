@@ -20,8 +20,9 @@ class Tienda
         $precio = $_POST['precio'];
         $cantidad = $_POST['cantidad'];
 
-        $sql = "INSERT INTO productos (id, nombre, precio, cantidad)
-        VALUES (null,'$nombre',$precio,$cantidad)";
+        $sql = "INSERT INTO productos (i nombre, precio, cantidad)
+        VALUES ('$nombre',$precio,$cantidad)";
+
         $resultado = $con->prepare($sql);
         $resultado->execute();
     }
